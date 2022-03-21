@@ -20,15 +20,15 @@
   color: #2b2c28;
   font-size: 40px;
 }
-
+/* Pantalla del juego */
 #game {
   width: 500px;
   height: 200px;
-  border: 3px solid #f92a82;
+  border: 3px solid #0a0a0a;
   padding: 0 10px;
   background-color: #f5dbcb;
 }
-
+/* Personaje (posicion relativa para ubicarlo dentro del juego) */
 #character {
   width: 20px;
   height: 50px;
@@ -36,11 +36,11 @@
   position: relative;
   top: 150px;
 }
-
+/* Animacion de saltar en una clase para agregarla desde JS cuando hago un click */
 .animate {
   animation: jump 500ms infinite;
 }
-
+/* Bloque enemigo con una posicion relativa para ubicarla y una animacion "block" */
 #block {
   width: 20px;
   height: 20px;
@@ -50,7 +50,7 @@
   left: 480px;
   animation: block 2s infinite linear;
 }
-
+/* Animacion block que hace que el bloque enemigo se desplace de derecha a izquierda */
 @keyframes block {
   0% {
     left: 480px;
@@ -59,7 +59,7 @@
     left: -40px;
   }
 }
-
+/* Animacion de saltar */
 @keyframes jump {
   0% {
     top: 150px;
